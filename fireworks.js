@@ -102,10 +102,6 @@ function main() {
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
 	ctx.fillRect(0, 0, cw, ch);
  
-   ctx.fillStyle='rgb(255,0,0)';  
-   ctx.fillRect(50,50,300,300);
-
-	
 	var i = fireworks.length;
 	while (i--) {
 		fireworks[i].draw();
