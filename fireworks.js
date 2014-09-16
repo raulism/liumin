@@ -6,10 +6,10 @@ window.requestAnimFrame = (function() {
 })();
 
 var canvas = document.getElementById('canvas'), ctx = canvas.getContext('2d'), 
-cw = 600, ch = 400, fireworks = [], explosions = [], mx, my;
+cw = window.innerWidth, ch = window.innerHeight, fireworks = [], explosions = [], mx, my;
 var maxFireworks = 17, minFireworks = 0;
-canvas.width = cw;
-canvas.height = ch;
+ctx.canvas.width = cw;
+ctx.canvas.height = ch;
 
 var Firework = function(tx, ty) {
 	this.tx = tx;
