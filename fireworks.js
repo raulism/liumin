@@ -103,13 +103,6 @@ function main() {
 	ctx.fillRect(0, 0, cw, ch);
 //	ctx.globalCompositeOperation = 'lighter';
         ctx.font="30px Verdana";
-// 创建渐变
-        var gradient=ctx.createLinearGradient(0,0,c.width,0);
-        gradient.addColorStop("0","magenta");
-        gradient.addColorStop("0.5","blue");
-        gradient.addColorStop("1.0","red");
-        // 用渐变填色
-        ctx.fillStyle=gradient;
         ctx.fillText("w3school.com.cn",10,90);
 
 	
