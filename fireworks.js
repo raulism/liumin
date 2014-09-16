@@ -11,7 +11,7 @@ var maxFireworks = 17, minFireworks = 0;
 ctx.canvas.width = cw;
 ctx.canvas.height = ch;
 ctx.font="40px Arial";
-ctx.fillText("Hello World",10,50);
+ctx.fillText("Hello World",100,500);
 
 var Firework = function(tx, ty) {
 	this.tx = tx;
