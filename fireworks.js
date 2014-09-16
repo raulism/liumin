@@ -101,9 +101,9 @@ function main() {
 //	ctx.globalCompositeOperation = 'destination-out';
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
 	ctx.fillRect(0, 0, cw, ch);
-//	ctx.globalCompositeOperation = 'lighter';
-        ctx.font="30px Verdana";
-        ctx.fillText("w3school.com.cn",10,90);
+ 
+   ctx.fillStyle='rgb(255,0,0)';  
+   ctx.fillRect(50,50,300,300);
 
 	
 	var i = fireworks.length;
