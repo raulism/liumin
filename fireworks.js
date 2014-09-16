@@ -102,8 +102,16 @@ function main() {
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
 	ctx.fillRect(0, 0, cw, ch);
 //	ctx.globalCompositeOperation = 'lighter';
-        ctx.font="40px Arial";
-        ctx.fillText("Hello World",100,500);
+        ctx.font="30px Verdana";
+// 创建渐变
+        var gradient=ctx.createLinearGradient(0,0,c.width,0);
+        gradient.addColorStop("0","magenta");
+        gradient.addColorStop("0.5","blue");
+        gradient.addColorStop("1.0","red");
+        // 用渐变填色
+        ctx.fillStyle=gradient;
+        ctx.fillText("w3school.com.cn",10,90);
+
 	
 	var i = fireworks.length;
 	while (i--) {
