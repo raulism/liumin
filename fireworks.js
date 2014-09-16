@@ -10,6 +10,8 @@ cw = window.innerWidth, ch = window.innerHeight, fireworks = [], explosions = []
 var maxFireworks = 17, minFireworks = 0;
 ctx.canvas.width = cw;
 ctx.canvas.height = ch;
+ctx.font="40px Arial";
+ctx.fillText("Hello World",10,50);
 
 var Firework = function(tx, ty) {
 	this.tx = tx;
