@@ -6,10 +6,13 @@ window.requestAnimFrame = (function() {
 })();
 
 var canvas = document.getElementById('canvas'), ctx = canvas.getContext('2d'), 
+canvas0 = document.getElementById('canvas0'), ctx0 = canvas0.getContext('2d'), 
 cw = window.innerWidth, ch = window.innerHeight, fireworks = [], explosions = [], mx, my;
-var maxFireworks = 17, minFireworks = 0;
+var maxFireworks = 30, minFireworks = 0;
 ctx.canvas.width = cw;
-ctx.canvas.height = ch;
+ctx.canvas.height = ch*0.83;
+ctx0.canvas.width = cw;
+ctx0.canvas.height = ch*0.17;
 
 var Firework = function(tx, ty) {
 	this.tx = tx;
@@ -100,8 +103,18 @@ function main() {
 
 //	ctx.globalCompositeOperation = 'destination-out';
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
-	ctx.fillRect(0, 0, cw, ch);
- 
+	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+	ctx0.font="30px Verdana";
+	ctx0.textBaseline ="middle";
+	ctx0.textAlign ="center";
+	var gradient=ctx0.createLinearGradient(0,0,ctx0.canvas.width,0);
+	gradient.addColorStop("0","magenta");
+	gradient.addColorStop("0.5","blue");
+	gradient.addColorStop("1.0","red");
+	ctx0.fillStyle=gradient;
+	ctx0.fillText("w3school.com.cn",ctx0.canvas.width*0.5,ctx0.canvas.height*0.5);
+//	ctx.globalCompositeOperation = 'lighter';
+	
 	var i = fireworks.length;
 	while (i--) {
 		fireworks[i].draw();
