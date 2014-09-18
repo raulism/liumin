@@ -104,7 +104,7 @@ function main() {
 //	ctx.globalCompositeOperation = 'destination-out';
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
 	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-	ctx0.font="30px Verdana";
+	ctx0.font="20px Verdana";
 	ctx0.textBaseline ="middle";
 	ctx0.textAlign ="center";
 	var gradient=ctx0.createLinearGradient(0,0,ctx0.canvas.width,0);
