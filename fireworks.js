@@ -112,7 +112,7 @@ function main() {
 	gradient.addColorStop("0.5","blue");
 	gradient.addColorStop("1.0","red");
 	ctx0.fillStyle=gradient;
-	ctx0.fillText("生日快乐-TO袁文娟",ctx0.canvas.width*0.5,ctx0.canvas.height*0.5);
+	ctx0.fillText("Happy Birthday to Yuan",ctx0.canvas.width*0.5,ctx0.canvas.height*0.5);
 //	ctx.globalCompositeOperation = 'lighter';
 	
 	var i = fireworks.length;
