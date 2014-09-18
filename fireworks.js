@@ -112,7 +112,7 @@ function main() {
 	gradient.addColorStop("0.5","blue");
 	gradient.addColorStop("1.0","red");
 	ctx0.fillStyle=gradient;
-	ctx0.fillText("祝你生日快乐，一直开开心心！",ctx0.canvas.width*0.5,ctx0.canvas.height*0.5);
+	ctx0.fillText("生日快乐，祝永远美丽！",ctx0.canvas.width*0.5,ctx0.canvas.height*0.5);
 //	ctx.globalCompositeOperation = 'lighter';
 	
 	var i = fireworks.length;
