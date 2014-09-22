@@ -1,11 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
 <title>jquery+html5</title>
 <link href="css/default.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/rose.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
@@ -14,15 +13,18 @@
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="comments">*2013—02-14,</span><br />
-			<span class="comments">*2013-02-28.</span><br />
-			<span class="comments">*/</span><br />
-			Boy name = <span class="keyword">Mr</span> LI<br />
-			Girl name = <span class="keyword">Mrs</span> ZHANG<br />
-			<br>
+			<span class="keyword">Dear 刘敏</span><br />
+			<span class="keyword">从2013年03月日到现在，大约半年时间内跟你在</span><br />
+			<span class="keyword">一起的每一刻都非常开心快乐。第次和你在万达金</span><br />
+			<span class="keyword">街见面，第一次和你在新街口看电影，第一次和你</span><br />
+			<span class="keyword">爬紫金山，第一次给你过生日。。迫不及待与你共</span><br />
+			<span class="keyword">享以后的生活。</span><br />
+			<span class="keyword"></span><br />
+			<span class="keyword">祝你生日快乐，天天开心。love u！</span><br />
+			<span class="keyword"></span><br />
+			<span class="writer">BY 石兴    </span><br />
 		</div>
-		<canvas id="c">Canvas is not supported in your browser.</canvas>
+		<canvas id="canvas">Canvas is not supported in your browser.</canvas>
 	</div>
 </div>
 
@@ -39,14 +41,13 @@ if (!document.createElement('canvas').getContext) {
 	var b = document.body;
 	var c = document.getElementsByTagName('canvas')[0];
 	var a = c.getContext('2d');
-	document.body.clientWidth;
+	//document.body.clientWidth;
 	with ( m = Math)
 	C = cos, S = sin, P = pow, R = random;
 	c.width = c.height = f = 500;
 	h = -250;
-	
+	adjustCodePosition();
 	$("#code").typewriter();
-	p(a,b,c);
 }
 </script>
 </body>
