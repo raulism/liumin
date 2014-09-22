@@ -32,4 +32,4 @@ $(window).resize(function() {
 		});
 		return this;
 	};
-})(jQuery);
+})(jQuery); 
