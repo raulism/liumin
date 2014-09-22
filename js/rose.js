@@ -1,5 +1,5 @@
 ﻿
-function p(a, b, c) { 
+function p(a, b, c) {
 	if (c > 60)
 		return [S(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) - S(b) * 50, b * f + 50, 625 + C(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) + b * 400, a * 1 - b / 2, a];
 	A = a * 2 - 1;
