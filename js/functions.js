@@ -17,7 +17,7 @@ function adjustCodePosition() {
 				if (progress >= str.length) {
 					clearInterval(timer);
 				}
-			}, 150);
+			}, 110);
 		});
 		return this;
 	};
