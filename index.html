@@ -31,7 +31,9 @@
 </div>
 
 <script type="text/javascript">
-
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
 	msg.id = "errorMsg";
