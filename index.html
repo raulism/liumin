@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<audio src="music/1973.mp3" preload="auto"></audio>
+<audio src="music/1973.mp3" autoplay="autoplay"></audio>
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
@@ -31,11 +31,9 @@
 </div>
 
 <script type="text/javascript">
-  <script>
       audiojs.events.ready(function() {
         audiojs.createAll();
       });
-  </script>
 
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
