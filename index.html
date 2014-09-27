@@ -6,11 +6,10 @@
 <link href="css/default.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
- <script type="text/javascript" src="js/audio.min.js"></script>
 </head>
 
 <body>
-<audio src="music/liumin.mp3" loop="loop" autoplay="autoplay"></audio>
+<audio src="music/liumin.mp3" controls="controls" loop="loop" autoplay="autoplay"></audio>
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
@@ -31,9 +30,7 @@
 </div>
 
 <script type="text/javascript">
-      audiojs.events.ready(function() {
-        audiojs.createAll();
-      });
+
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
 	msg.id = "errorMsg";
