@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<audio src="music/1973.mp3" preload="auto"></audio>
+
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
@@ -25,17 +25,16 @@
 			<span class="keyword">Wish you happy everyday.</span><br />
 			<br />
 			<span class="writer">by 小受同学</span><br />
+			<audio src="music/1973.mp3" preload="auto"></audio>
 		</div>
 		<canvas id="canvas">Canvas is not supported in your browser.</canvas>
 	</div>
 </div>
 
 <script type="text/javascript">
-  <script>
       audiojs.events.ready(function() {
         audiojs.createAll();
       });
-  </script>
 
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
