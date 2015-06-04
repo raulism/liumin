@@ -6,45 +6,49 @@
 
 <title>artDialog</title>
 
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
 <script type="text/javascript">
 　 function func1(){
- 　		alert("hello world 1");
-		func2();
+	 	alert("提示：你点击了一个按钮1");
+	 	func2();
 	}
  	function func2(){
-		alert("hello world 2");
-		func3();
+ 		alert("提示：你点击了一个按钮2");
+ 		func3();
 	}
  	function func3(){
-		alert("hello world 3");
-		func4();
+ 		alert("提示：你点击了一个按钮3");
+ 		func4();
 	}
  	function func4(){
-		alert("hello world 4");
-		func5();
+ 		alert("提示：你点击了一个按钮4");
+ 		func5();
 	}
  	function func5(){
-		alert("hello world 5");
-		func6();
-	}
- 	function func6(){
-		alert("hello world 6");
-		disp_confirm();
+ 		alert("提示：你点击了一个按钮5");
+ 		disp_confirm();
 	}
  	function disp_confirm()    {    
- 	     var r=confirm("按下按钮")   
+ 	     var r=confirm("答应吧")   
  	 	 if (r==true){    
- 	     	 document.write("您按了确认！")   
+ 	 		window.location.href="demo.html"
  	    }else{    
 	 	     func6();  
  	     }    
  	}    
+ 	function func6(){
+ 		 var r=confirm("真的取消吗，会后悔的")   
+ 	 	 if (r==true){    
+ 	 		disp_confirm();
+ 	    }else{    
+ 	    	disp_confirm();  
+ 	     }    
+	}
 </script>
 </head>
 
-<body onload="func1();">test
+<body onload="func1();">
 </body>
-
 
 <!-- <script src="artDialog.source.js?skin=aero"></script> -->
 <!-- <script src="./_doc/demo.js"></script>  -->
