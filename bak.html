@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<title>artDialog</title>
+
+<script type="text/javascript">
+　 function func1(){
+ 　		alert("hello world 1");
+		func2();
+	}
+ 	function func2(){
+		alert("hello world 2");
+		func3();
+	}
+ 	function func3(){
+		alert("hello world 3");
+		func4();
+	}
+ 	function func4(){
+		alert("hello world 4");
+		func5();
+	}
+ 	function func5(){
+		alert("hello world 5");
+		func6();
+	}
+ 	function func6(){
+		alert("hello world 6");
+		disp_confirm();
+	}
+ 	function disp_confirm()    {    
+ 	     var r=confirm("按下按钮")   
+ 	 	 if (r==true){    
+ 	     	 document.write("您按了确认！")   
+ 	    }else{    
+	 	     func6();  
+ 	     }    
+ 	}    
+</script>
+</head>
+
+<body onload="func1();">test
+</body>
+
+
+<!-- <script src="artDialog.source.js?skin=aero"></script> -->
+<!-- <script src="./_doc/demo.js"></script>  -->
+
+</html>
