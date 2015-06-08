@@ -32,7 +32,6 @@ var canvas = document.getElementById( 'canvas' ),
 		mx,
 		// mouse y coordinate
 		my;
-		
 // set canvas dimensions
 canvas.width = cw;
 canvas.height = ch;
