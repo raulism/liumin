@@ -2,8 +2,57 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Sorry Page</title>
+<title>Happy Birthday</title>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/audio.min.js"></script>
+</head>
+
 <body>
-	正在修改ing...
+<audio src="music/liumin.mp3" loop="loop" autoplay="autoplay" style="display:none;"></audio>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="keyword">床前明月光1</span><br />
+			<br />
+			<span class="keyword">床前明月光2</span><br />
+			<br />
+			<span class="keyword">床前明月光3</span><br />
+			<br />
+			<span class="keyword">疑似地上霜</span><br />
+			<br />
+			<span class="keyword">Wish you happy everyday.</span><br />
+			<br />
+			<span class="writer">by shixing</span><br />
+		</div>
+		<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+	</div>
+</div>
+
+<script type="text/javascript">
+  audiojs.events.ready(function() {
+        audiojs.createAll();
+  });
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none");
+	document.execCommand("stop");
+} else {
+	var b = document.body;
+	var c = document.getElementsByTagName('canvas')[0];
+	var a = c.getContext('2d');
+	//document.body.clientWidth;
+	with ( m = Math)
+	C = cos, S = sin, P = pow, R = random;
+	c.width = c.height = f = 500;
+	h = -250;
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
 </body>
 </html>
