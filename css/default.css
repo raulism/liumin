@@ -11,10 +11,10 @@ body{
 	float:left;width:400px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px
 	}
 #code .keyword{
-	color:#7f0055;font-size:23px;font-family:Microsoft YaHei;
+	color:#7f0055;font-size:30px;font-family:Microsoft YaHei;
 	}
 #code .writer{
-	float:right;color:#7f0055;font-size:20px;font-family:Microsoft YaHei;
+	color:#7f0055;font-size:20px;font-family:Microsoft YaHei;
 	}	
 #errorMsg{
 	width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0
