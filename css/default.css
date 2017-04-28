@@ -11,7 +11,7 @@ body{
 	float:left;width:400px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px
 	}
 #code .keyword{
-	float:left;margin:0 auto,color:#7f0055;font-size:30px;font-family:Microsoft YaHei;
+	margin:0 auto,color:#7f0055;font-size:30px;font-family:Microsoft YaHei;
 	}
 #code .writer{
 	float:left;color:#7f0055;font-size:20px;font-family:Microsoft YaHei;
